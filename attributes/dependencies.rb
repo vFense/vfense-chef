@@ -1,8 +1,8 @@
-default["vfense"]["apscheduler"]["repository"]["url"] = "https://linuxdynasty@bitbucket.org/linuxdynasty/apscheduler.git"
-default["vfense"]["apscheduler"]["repository"]["branch"] = "vfense"
-default["vfense"]["apscheduler"]["tmp_dir"] = "/tmp/apscheduler"
+default["vFense"]["server"]["apscheduler"]["repository"]["url"] = "https://linuxdynasty@bitbucket.org/linuxdynasty/apscheduler.git"
+default["vFense"]["server"]["apscheduler"]["repository"]["branch"] = "vfense"
+default["vFense"]["server"]["apscheduler"]["tmp_dir"] = "/tmp/apscheduler"
 
-default["vfense"]["dependencies"]["ubuntu"] = [
+default["vFense"]["server"]["dependencies"]["ubuntu"] = [
   "python-setuptools",
   "python-pip",
   "redis-server",
@@ -18,7 +18,7 @@ default["vfense"]["dependencies"]["ubuntu"] = [
 ]
 
 
-default["vfense"]["dependencies"]["python"] = [
+default["vFense"]["server"]["dependencies"]["python"] = [
   {
     "name" => "BeautifulSoup",
     "version" => nil,
