@@ -4,7 +4,6 @@ def whyrun_supported?
   true
 end
 
-
 action :initialize do
   if ::Dir.exists?(node.vFense.server.base_dir)
     link "#{site_packages_dir}/vFense" do
