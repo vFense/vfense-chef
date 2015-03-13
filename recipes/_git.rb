@@ -1,15 +1,15 @@
-git node["vFense"]["server"]["install_directory"] do
-   repository node["vFense"]["server"]["repository"]["url"]
-   revision node["vFense"]"server"]["repository"]["branch"]
-   action :sync
-   user node["vFense"]["server"]["system"]["user"]
-   group node["vFense"]["server"]["system"]["group"]
+git node['vfense']['server']['install_directory'] do
+  repository node['vfense']['server']['repository']['url']
+  revision node['vfense']['server']['repository']['branch']
+  action :sync
+  user node['vfense']['server']['system']['user']
+  group node['vfense']['server']['system']['group']
 end
 
-git node["vFense"]["ui"]["install_directory"] do
-   repository node["vFense"]["ui"]["repository"]["url"]
-   revision node["vFense"]"ui"]["repository"]["branch"]
-   action :sync
-   user node["vFense"]["server"]["system"]["user"]
-   group node["vFense"]["server"]["system"]["group"]
+git node['vfense']['ui']['install_directory'] do
+  repository node['vfense']['ui']['repository']['url']
+  revision node['vfense']['ui']['repository']['branch']
+  action :sync
+  user node['vfense']['server']['system']['user']
+  group node['vfense']['server']['system']['group']
 end

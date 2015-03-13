@@ -7,5 +7,5 @@ module Vfense
         python_site_directories = output.stdout.chomp.split(",")
         return python_site_directories[-1]
     end
-
-
+  end
+end
