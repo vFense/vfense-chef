@@ -15,6 +15,6 @@ include_recipe 'vfense::_git'
 link_to = "#{node['vfense']['server']['base_directory']}/vFense"
 link_from = "#{site_packages_dir}/vFense"
 
-link link_to do
-  to link_from
+link link_from do
+  to link_to
 end
