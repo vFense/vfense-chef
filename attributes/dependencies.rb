@@ -1,5 +1,5 @@
 default['vfense']['server']['apscheduler']['repository']['url'] = 'https://linuxdynasty@bitbucket.org/linuxdynasty/apscheduler.git'
-default['vfense']['server']['apscheduler']['repository']['branch'] = 'vfense'
+default['vfense']['server']['apscheduler']['repository']['branch'] = 'vFense'
 default['vfense']['server']['apscheduler']['tmp_dir'] = '/tmp/apscheduler'
 
 default['vfense']['server']['dependencies']['ubuntu'] = [

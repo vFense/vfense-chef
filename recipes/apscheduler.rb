@@ -1,6 +1,6 @@
 git node['vfense']['server']['apscheduler']['tmp_dir'] do
    repository node['vfense']['server']['apscheduler']['repository']['url']
-   revision node['vfense']['server']['apsheduler']['repository']['branch']
+   revision node['vfense']['server']['apscheduler']['repository']['branch']
    action :sync
 end
 

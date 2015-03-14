@@ -6,3 +6,5 @@ node['vfense']['server']['dependencies']['python'].each do |pkg|
     version pkg['version']
   end
 end
+
+include_recipe 'vfense::apscheduler'
