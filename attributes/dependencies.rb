@@ -14,7 +14,8 @@ default['vfense']['server']['dependencies']['ubuntu'] = [
   'libxml2-dev',
   'libxslt1-dev',
   'curl',
-  'libcurl4-openssl-dev'
+  'libcurl4-openssl-dev',
+  'libffi-dev'
 ]
 
 
@@ -113,6 +114,10 @@ default['vfense']['server']['dependencies']['python'] = [
   },
   {
     'name' => 'logstash_formatter',
+    'version' => nil,
+  },
+  {
+    'name' => 'pyOpenSSL',
     'version' => nil,
   },
 ]
