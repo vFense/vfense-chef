@@ -1,3 +1,5 @@
+include_recipe "apt"
+
 apt_repository 'nginx' do
   uri          'ppa:nginx/stable'
   components   ['main']
@@ -6,4 +8,5 @@ apt_repository 'nginx' do
   key          'C300EE8C'
   action       :add
   notifies     :run, 'execute[apt-get update]', :immediately
+  notifies     :start, 'service[nginx]', :immediately
 end
