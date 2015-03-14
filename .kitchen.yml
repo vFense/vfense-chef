@@ -16,5 +16,5 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[vfense::configure]
+      - recipe[vfense::setup]
     attributes:
