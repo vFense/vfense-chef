@@ -9,3 +9,7 @@ module Vfense
     end
   end
 end
+
+Chef::Recipe.send(:include, Vfense::Helpers)
+Chef::Provider.send(:include, ::Vfense::Helpers)
+Chef::Resource.send(:include, ::Vfense::Helpers)
