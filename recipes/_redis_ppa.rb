@@ -5,5 +5,4 @@ apt_repository 'redis' do
   keyserver    'keyserver.ubuntu.com'
   key          'C7917B12'
   action       :add
-  notifies     :run, 'execute[apt-get update]', :immediately
 end
