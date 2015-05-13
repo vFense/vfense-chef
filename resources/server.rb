@@ -1,4 +1,4 @@
-actions :initialize, :join_cluster, :delete
+actions :initialize, :join_cluster
 
 state_attrs :username,
             :password,
